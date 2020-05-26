@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+html {
+    background-color: rgba(36, 20, 51, 0.959);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    color: cyan;
+    border: 1.5px solid cyan;
+    background: transparent;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    position: relative;
+    transition: all .5s;
+}
+
+/* button::before,
+button::after {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: cyan;
+    z-index: -1;
+    
+} */
+
+.button::before,
+.button::after{
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    /* background-color: red; */
+    border-color: cyan;
+    border-style: solid;
+    transition: all .3s;
+}
+
+/* 
+button::before{
+    content: '';
+    width: 2.5em;
+    height: 2.5rem;
+    position: absolute;
+    top: 28px;
+    right: -9px;
+    bottom: -9px;
+    background-color: rgb(77, 77, 148);
+}
+
+button::after {
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    bottom: -40px;
+    background-color: darkslateblue;
+}
+
+button:hover::before,
+button:hover::after {
+    background-color: lightgreen;
+}
+
+button:hover {
+    
+}
+ */
+
+ .button::before{
+    top: -.8rem;
+    left: -.8rem;
+    border-width: 3px 0 0 2px;
+}
+
+.button::after{
+    bottom: -.8rem;
+    right: -.8rem;
+    border-width: 0px 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after{
+    width: calc(100% + 1.4rem);
+    height: calc(100% + 1.4rem);
+    border-color: #fff;
+}
+
+.button:hover{
+    color: #272838;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+
+
