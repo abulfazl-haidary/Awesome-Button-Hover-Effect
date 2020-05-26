@@ -24,7 +24,7 @@ button {
     border: 1.5px solid cyan;
     background: transparent;
     letter-spacing: 1px;
-    word-spacing: 3px;
+    word-spacing: 3.2px;
     position: relative;
     transition: all .5s;
 }
